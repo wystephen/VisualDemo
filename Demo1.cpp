@@ -19,5 +19,6 @@ int main(int argc, char* argv[]) {
 //                                             w.showTime();
 //                                         });
 //    time_thread.detach();
+//    w.showTime();
     return a.exec();
 }

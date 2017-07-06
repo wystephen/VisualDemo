@@ -11,6 +11,8 @@
 #include <QtCore/QDateTime>
 #include "ui_widget.h"
 
+#include <thread>
+
 
 class Widget : public QWidget {
 Q_OBJECT
@@ -21,7 +23,7 @@ public:
     inline void showTime()
     {
 //        QDateTime setTime = QDateTime::FromString(QString)
-        ui.lineEdit_time->setText((QDateTime::currentDateTime().toString()));
+
 //        return true;
     }
 
@@ -30,6 +32,7 @@ private slots:
 
 private:
     Ui::Widget ui;
+    bool is_start_show_time = false;
     int m_iCount;
 };
 

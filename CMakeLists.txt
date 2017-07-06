@@ -45,4 +45,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 find_package(Qt5Widgets)
 
 add_executable(Demo1 Demo1.cpp include/Widget.cpp include/Widget.h )
-target_link_libraries(Demo1 Qt5::Widgets)
+target_link_libraries(Demo1 Qt5::Widgets pthread)
