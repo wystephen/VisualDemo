@@ -9,7 +9,6 @@
 int main(int argc, char* argv[]) {
     QApplication a(argc, argv);
 
-
     Widget w;
 
     w.setGeometry(700, 500, 1320,1240);
