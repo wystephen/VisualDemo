@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.7)
 project(VisualDemo)
 
 set(CMAKE_CXX_STANDARD 11)
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3 ")
 
 set(CMAKE_INCLUDE_CURRENT_DIR  ON)
 #打开Qt的MOC功能和UI文件处理功能
@@ -37,7 +38,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR  ON)
 #打开Qt的MOC功能和UI文件处理功能
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lpthread")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 #查找Qt的库

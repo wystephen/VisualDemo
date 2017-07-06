@@ -8,6 +8,7 @@
 #include <QtWidgets/QWidget>
 #include <QMainWindow>
 #include <QtWidgets/QApplication>
+#include <QtCore/QDateTime>
 #include "ui_widget.h"
 
 
@@ -16,6 +17,13 @@ Q_OBJECT
 public:
     Widget(QWidget* parent = 0);
     ~Widget();
+
+    inline void showTime()
+    {
+//        QDateTime setTime = QDateTime::FromString(QString)
+        ui.lineEdit_time->setText((QDateTime::currentDateTime().toString()));
+//        return true;
+    }
 
 private slots:
     void slotPushButton();
