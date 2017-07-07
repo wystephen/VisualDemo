@@ -20,12 +20,12 @@ public:
     Widget(QWidget* parent = 0);
     ~Widget();
 
-    inline void showTime()
-    {
+//    inline void showTime()
+//    {
 //        QDateTime setTime = QDateTime::FromString(QString)
 
 //        return true;
-    }
+//    }
 
 private slots:
     void slotPushButton();
