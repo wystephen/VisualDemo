@@ -13,11 +13,11 @@ int main(int argc, char* argv[]) {
 
     w.setGeometry(700, 500, 1320,1240);
     w.show();
-//    std::thread time_thread([&]()
-//                                         {
-//                                             w.showTime();
-//                                         });
-//    time_thread.detach();
+    std::thread time_thread([&]()
+                                         {
+                                             w.showTime();
+                                         });
+    time_thread.detach();
 //    w.showTime();
     return a.exec();
 }
