@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
 
     Widget w;
 
-    w.setGeometry(700, 500, 1320,1240);
+    w.setGeometry(700, 500, 1111,1111);
     w.show();
 //    std::thread time_thread([&]()
 //                                         {
