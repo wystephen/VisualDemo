@@ -28,7 +28,7 @@ void Widget::slotPushButton() {
 
                        }
         );
-        st.detach();
+//        st.detach();
         is_start_show_time=true;
     }
     ++m_iCount;
