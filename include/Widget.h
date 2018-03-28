@@ -14,21 +14,23 @@
 #include <thread>
 
 #include <iostream>
+
 class Widget : public QWidget {
 Q_OBJECT
 public:
-    Widget(QWidget* parent = 0);
+    Widget(QWidget *parent = 0);
+
     ~Widget();
 
-    inline void showTime()
-    {
+    inline void showTime() {
 //        QDateTime setTime = QDateTime::FromString(QString)
-        std::cout << "eee"<< std::endl;
+        std::cout << "eee" << std::endl;
 //
 //        return true;
     }
 
 private slots:
+
     void slotPushButton();
 
 private:
