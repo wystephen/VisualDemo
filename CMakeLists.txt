@@ -43,6 +43,14 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lpthread")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 #查找Qt的库
 find_package(Qt5Widgets)
+find_package(Qt5Core)
+foreach(plugin ${Qt5Charts_PLUGINS})
+    get_target_property(_loc ${plugin} LOCATION)
+    message("Plugin ${plugin} is at location ${_loc}")
+endforeach()
 
 add_executable(Demo1 Demo1.cpp include/Widget.cpp include/Widget.h )
 target_link_libraries(Demo1 Qt5::Widgets pthread)
+
+add_executable(gl_chart gl_chart.cpp datasource.cpp datasource.h)
+target_link_libraries(gl_chart Qt5::Widgets Qt5::Core)
